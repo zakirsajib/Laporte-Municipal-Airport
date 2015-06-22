@@ -1,6 +1,5 @@
 READ ME
 -----------------------
-
 PSD to responsive theme development
 Theme options panel
 Live AWOS feed
