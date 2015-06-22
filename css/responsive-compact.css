@@ -1,0 +1,113 @@
+@media screen and (max-width: 1199px) { /*1199px*/
+	body{
+		font-size: 90%;
+	}
+}
+
+
+@media screen and (max-width: 1043px) { /* 1043px */
+
+	.entry-content .awos .aviationweather,
+	.automated-weather-observing-system{
+		right: 0;
+	}
+
+}
+
+
+
+@media screen and (max-width: 979px) { /* 979px */
+	body{
+		font-size: 65%;
+	}
+	.mc-main .my-calendar-nav li a{
+		font-size: 0.7em;
+	}
+	.logo{position: relative; top:-10px;}
+}
+
+@media screen and (max-width: 827px) { /* 827px */
+
+	.entry-content .awos .aviationweather,
+	.automated-weather-observing-system{
+		right: 0;
+	}
+
+}
+
+
+
+@media screen and (max-width: 47.94em) { /* 767px */
+	body{
+		font-size: 100%;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	
+	.index-container,
+	.home-container,
+	.page-container{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	
+	.header-wrapper{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	
+	.mc-main .my-calendar-nav li a{
+		font-size: 1em;
+	}
+	
+	.entry-content h1.logo-title,
+	.entry-content h2.tagline{
+		text-align: center;
+	}
+	
+	.entry-content .awos{
+		text-align: center;
+	}
+	
+	.automated-weather-observing-system{
+		right: 0;
+		max-width: 100%;
+		background-position: 50% 100%;
+	}
+	.entry-content .awos .aviationweather{
+		right: 0;
+	}
+	
+	.entry-content .fuel-price,
+	.entry-content .awos{
+		background-position: 80% 0%;
+	}
+	
+	.entry-content .home-contact{
+		text-align: center;
+	}
+	
+	.footer-home, 
+	.footer{
+		height: 100%;
+		text-align: center;
+	}
+}
+
+
+@media screen and (max-width: 34.29em) { /*480px */
+	body{
+		font-size: 90%;
+	}
+	
+	.caption{
+		padding: 0;
+		font-size: 1.2em;
+	}
+}
+
+@media screen and (max-width: 26.92em) { /* 350px */
+	body{
+		font-size: 80%;
+	}
+}

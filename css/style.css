@@ -1,0 +1,503 @@
+* { border:0; margin:0 auto; padding:0; outline:none; 
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+body{
+	background-color: #f5f5f5;
+	font-size: 100%; /* flexible baseline */
+	font-family: 'Droid Sans', sans-serif;
+	text-rendering: optimizeLegibility;
+}
+
+a{
+	text-decoration: none; 
+	color: #445272; 
+	outline:0;
+}
+
+ul, ol{
+	margin: 0;
+}
+a:hover {
+	color: #445272;
+}
+
+a:active {
+	color: #000;
+}
+
+object, embed { 
+  outline: 0;
+}
+::selection{background: #445272; color: #FFF;}
+::-moz-selection{background: #445272; color: #FFF;}
+
+
+
+p{
+	font-family: 'Droid Sans', sans-serif;
+	font-size: 1.5em; /*18pt equals to 1.5em*/
+	line-height: 1.5;
+	font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Oswald', sans-serif;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #2D3956;
+}
+
+h1{
+	font-size: 40pt;
+}
+
+h2{
+	font-size: 36pt;
+}
+h3{
+	font-size: 30pt;
+}
+h4{
+	font-size: 24pt;
+}
+h5{
+	font-size: 18pt;
+}
+
+h6{
+	font-size: 14pt;
+}
+
+
+
+/* Header and basic layout
+--------------------------------*/
+
+
+.header-wrapper{
+	position: absolute;
+	top:0;
+	z-index: 100;
+	padding: 0;
+	background: #445272;
+}
+
+
+#wrapper{
+	margin: 0 auto;
+	max-width: 100%; /*if you change this value then change the value of $content_width also in functions.php*/
+
+}
+
+
+
+.index-container,
+.home-container,
+.page-container{
+	min-height: 550px;
+	height:auto !important; 
+   	height: 550px;
+   	padding-bottom:50px;
+}
+
+
+.page-container{
+	padding-top: 400px;
+}
+
+
+.top-img-page{
+	position: absolute;
+	top:0;
+	height: 260px;
+	width: 100%;
+}
+
+
+.breadcrumb{
+	margin: 0 0 50px;
+	border-bottom: 1px solid #ccc;
+}
+
+/* Post contents
+-------------------------------------------------------------- */
+
+.entry-content h1.logo-title{
+	font-size: 6.875em;
+	color:#455273;
+	margin: 0;
+	line-height: 1;
+}
+
+.entry-content h2.tagline{
+	font-size: 2.500em;
+	color: #ff2400;
+	margin: 0;
+}
+
+.entry-content .fuel-price{
+	text-align: center;
+	background: url(../images/circle.png) no-repeat 100% 0%;
+	padding: 2em 0 0;
+}
+
+
+.entry-content .awos{
+	background: url(../images/circle.png) no-repeat 100% 0%;
+	padding: 2em 0 0;
+}
+
+.entry-content .fuel-price p,
+.entry-content .summer-camp p{
+	font-size: 1.125em;
+	color: #4d4e53;
+}
+
+
+
+.entry-content .get-in-touch h2.widget-title{
+	font-size: 1.875em;
+}
+
+.entry-content .fuel-price h2,
+.entry-content .awos h2,
+.entry-content .summer-camp h2{
+	font-size: 1.875em;
+	color: #445272;
+	text-transform: uppercase;
+	
+}
+
+.entry-content .summer-camp h2{
+	margin: 0;
+}
+
+.entry-content .awos .aviationweather{
+	position: relative;
+	right:-45px;
+}
+
+.entry-content .awos .aviationweather a{
+	font-size: 0.844em;
+	color: #4d4e53;
+}
+
+.automated-weather-observing-system{
+	font-family: 'Oswald', sans-serif;
+	font-size: 1.125em;
+	text-transform: uppercase;
+	color: #4d4e53;
+	background: url(../images/inset.png) no-repeat 0 0; 
+	height: 31px;
+	max-width: 226px;
+	padding: 7px;
+	margin: 0 0 5px;
+	position: relative;
+	right:-45px;
+}
+
+div.aw-widget-current-inner div.aw-widget-content a.aw-current-weather h3{
+	color: #fff;
+	font-family: inherit;
+}
+
+div.aw-widget-current-inner div.aw-widget-content a.aw-current-weather p{
+	display: inline-table;
+}
+
+
+.entry-content ul,
+.entry-content ol{
+	margin: 0 0 10px 15px;
+}
+
+.entry-content ul li,
+.entry-content ol li{
+	line-height: 1.5em;
+	margin: 0 0 5px;
+}
+
+.entry-content ul li{
+	list-style-type: disc;
+}
+
+.entry-content ol li{
+	list-style-type: decimal;
+}
+
+
+
+
+/*Menus
+------------------------------------------------------------*/
+/*Overriding bootstrap style*/
+
+.navbar{
+	position: relative;
+	margin-bottom: 0;
+	margin-top: 10px;
+}
+
+.navbar .nav{
+	float: right;
+}
+
+.navbar-inner{
+	-moz-border-radius:0;
+	-webkit-border-radius:0;
+	border-radius:0;
+	-moz-box-shadow:none;
+	-webkit-box-shadow:none;
+	box-shadow:none;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+
+.navbar-inverse .navbar-inner{
+	background-color: transparent;
+	background-image: none;
+	border-color: transparent;
+	filter:0;
+}
+
+.navbar-inverse .brand, 
+.navbar-inverse .nav > li > a{
+	color: #fff;
+}
+
+.navbar .nav > li > a{
+	font-family: 'Oswald', sans-serif;
+	color: #fff;
+	font-style: normal; 
+	font-weight: 400;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	padding: 28px 20px 10px;
+}
+
+.navbar-inverse .nav > li > a:focus, 
+.navbar-inverse .nav > li > a:hover{ /*Top level menu item*/
+	color: #ff2300;
+	background: url(../images/hover-arrow.png) no-repeat 50% 0%;
+	height: 19px;
+}
+.navbar-inverse .nav-collapse .nav > li > a:hover, 
+.navbar-inverse .nav-collapse .dropdown-menu a:hover{
+	/* background-color: rgba(242, 242, 242, 0.49)!important; */
+}
+
+
+/*Top level current page item*/
+.navbar .nav > li.current_page_item a{
+	color: #ff2300;
+	background: url(../images/hover-arrow.png) no-repeat 50% 0%;
+	height: 19px;
+}
+
+
+/* #main-menu{float: right;} */ /*Change float depends on project*/
+
+/*Drop down*/
+.top-menu ul li ul li{
+	float: none; 
+	position: relative;
+	padding: 10px 0;
+}
+.top-menu ul li ul{
+	position: absolute; 
+	top:59px;
+	display: none; 
+	background-color: #445272;
+	min-width:160px; 
+	z-index: 999;
+	  *border-right-width: 2px;
+	  *border-bottom-width: 2px;
+	  -webkit-background-clip: padding-box;
+	     -moz-background-clip: padding;
+	          background-clip: padding-box;
+	padding: 10px 0;
+	
+}
+
+.top-menu ul li:hover > ul{display: inline-block;}
+
+.top-menu ul li ul li a{
+	white-space: nowrap; 
+	font-family: 'Oswald', sans-serif;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	font-weight: 400;
+	padding: 0 20px;
+	background: none!important;
+}
+
+
+/*Sub-menu item hover */
+.top-menu ul li ul li a:hover{
+	color: #ff2300!important;
+	text-decoration: none;
+}
+
+.top-menu ul li ul li:last-child a{
+	border-bottom: 0;
+}
+
+.top-menu ul li ul li ul{
+	position: absolute; 
+	top:0; 
+	left:160px; 
+	display: none; 
+	background-color: #2F2D2E; 
+	min-width:160px;
+	border: 1px solid #ccc;
+	  border: 1px solid rgba(0, 0, 0, 0.2);
+	  *border-right-width: 2px;
+	  *border-bottom-width: 2px;
+	  -webkit-border-radius: 6px;
+	     -moz-border-radius: 6px;
+	          border-radius: 6px;
+	  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+	     -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+	          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+	  -webkit-background-clip: padding-box;
+	     -moz-background-clip: padding;
+	          background-clip: padding-box;
+}
+
+/*
+.top-menu li.current_page_item a, 
+.top-menu li.current_page_parent a, 
+.top-menu li.current-page-ancestor a {
+	color: #fff;
+}
+
+.top-menu li.current_page_item{
+
+}
+*/
+
+.sub-menu li a{
+	color: #fff!important;
+}
+
+.sub-menu li.current_page_item a{
+	color: #ff2300!important;
+}
+
+
+
+
+/*404
+-----------------------------------------------------------*/
+.hero-unit{
+	text-align: center;
+}
+
+.hero-unit h1{
+	margin-bottom: 15px;
+}
+
+/*IE 8 and below border radius*/
+.yourdivname{
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	behavior:url(http://fullpath/wp-content/uploads/PIE/PIE.htc);
+}
+
+
+/*Contact
+------------------------------------------------------------*/
+.wpcf7 input[type="text"],
+.wpcf7 input[type="email"],
+.wpcf7 textarea{
+	width: 100%;	
+}
+
+
+.wpcf7 input[type="text"],
+.wpcf7 input[type="email"]{
+	height: 30px;
+}
+
+.wpcf7-submit{
+	
+}
+
+/*Footer menu
+------------------------------------------------------------*/
+
+/*Footer home*/
+
+.footer-home,
+.footer{
+	background: url(../images/footer-home-bg.png) no-repeat center center;
+	height: 505px;
+	-moz-background-size:cover;
+	-webkit-background-size:cover;
+	background-size:cover;
+}
+
+
+.footer-inner{
+	padding: 45px 0 0;
+}
+
+.menu-footer-menu-container ul li{
+	/* line-height: 2; */
+	padding: 0 0 1.5em;
+}
+
+.menu-footer-menu-container ul li a,
+.widget-title{
+	font-family: 'Oswald', sans-serif;
+	font-size: 1.5em;
+	color: #445272;
+	text-transform: capitalize;
+	margin: 0 0 10px;
+}
+
+.get-in-touch{
+	padding: 0 0 1em;
+}
+
+.get-in-touch h2.widget-title{
+	font-family: 'Oswald', sans-serif;
+	font-size: 1.5em;
+	color: #445272;
+	text-transform: uppercase;
+}
+
+.get-in-touch .textwidget p{
+	font-size: 1.125em;
+	color: #455273;
+	line-height: 1.4;
+}
+
+
+.footer-home .deals p,
+.footer .deals p{
+	font-size: 0.875em;
+	color: #445272;
+	margin: 0 0 1.2em;
+}
+
+.footer-home .copyright p,
+.footer .copyright p{
+	color: #2c3857;
+	font-size: 1.125em;
+}
+
+.copyright{
+	margin: 3em 0 0;
+}
+
+.coupons{
+	margin: 0 0 1em;
+}
+

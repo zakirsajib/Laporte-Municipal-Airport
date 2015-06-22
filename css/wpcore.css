@@ -1,0 +1,162 @@
+
+/* =WordPress Core
+-------------------------------------------------------------- */
+
+/*Post Image Alignment*/
+
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+img.alignright {float:right; margin:0 0 1em 1em}
+img.alignleft {float:left; margin:0 1em 1em 0}
+img.aligncenter {display: block; margin-left: auto; margin-right: auto}
+a img.alignright {float:right; margin:0 0 1em 1em}
+a img.alignleft {float:left; margin:0 1em 1em 0}
+a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
+
+/*blockquote*/
+blockquote p {
+    display: inline;
+    font-style: italic;
+    font-stretch: condensed;
+}
+
+
+blockquote:before {
+    color: #CCCCCC;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+}
+
+blockquote {
+    background: none repeat scroll 0 0 #F9F9F9;
+    border-left: 10px solid #CCCCCC;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    quotes: "“" "”" "‘" "’";
+}
+blockquote, q {
+    quotes: "" "";
+}
+
+.post-content a {
+    font-size: 12px;
+    font-weight: normal;
+    text-decoration: none;
+}
+.post-content a:hover{
+	text-decoration: underline;
+}
+
+.post-content ul, ol{ padding:0; margin: 0 0 10px 10px;}
+.post-content ol li{
+	line-height: 18px;
+    font-size: 13px;
+    list-style-type: decimal;
+    list-style-position: inside;
+}
+.post-content ul li{
+	line-height: 18px;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+.wp-caption {
+    background: #fff;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+
+
+.sticky{
+	border-top: 4px double #ededed;
+	border-bottom: 4px double #ededed;
+	color: #757575;
+	font-size: 13px;
+	font-size: 0.928571429rem;
+	line-height: 3.692307692;
+	margin-bottom: 24px;
+	margin-bottom: 1.714285714rem;
+}
+
+.gallery-caption{
+	width: 90%;
+}
+
+.gallery-caption a {
+	display: inline;
+}
+
+.gallery-caption,
+.entry-caption {
+	font-style: italic;
+	font-size: 12px;
+	font-size: 0.857142857rem;
+	line-height: 2;
+	color: #757575;
+}
+.bypostauthor{
+
+}
+
+/*WP Content width*/
+.size-auto, 
+.size-full,
+.size-large,
+.size-medium,
+.size-thumbnail {
+	max-width: 100%;
+	height: auto;
+}
+
+
+/* Make sure videos and embeds fit their containers */
+embed,
+iframe,
+object,
+video {
+	max-width: 100%;
+}
